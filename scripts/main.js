@@ -6,6 +6,10 @@ function getWidth(id) {
   return document.getElementById(id).offsetWidth;
 }
 
+function getHeight(id) {
+  return document.getElementById(id).offsetHeight;
+}
+
 function incrementWidth(id) {
   setWidth(id, getWidth(id) + 2);
 }

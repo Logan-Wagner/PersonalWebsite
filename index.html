@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <link rel = "stylesheet" href = "./styling/style.css">
     <link rel = "stylesheet" href = "./styling/index.css">
@@ -13,13 +12,19 @@
   <body>
     <script src = "./scripts/main.js"></script>
     <div id = "navigation_pane">
-      <nav>
-        <div id = "menu_button" onclick="openNavigationPane()"><h1>menu</h1></div>
+      <nav id = "mainMenu">
+        <div id = "menu_button" onclick="openNavigationPane()">menu</div>
       </nav>
     </div>
     <div id = "main_screen">
-
+      <div id = "foregroud">
+      <p> Here is some text</p>
+      <h1> a header</h1>
     </div>
+      <canvas id = "canvas"></canvas>
+    </div>
+    <script src = "./scripts/BackgroundBubble.js">
+    </script>
   </body>
 
 </html>
