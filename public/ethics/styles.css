@@ -1,0 +1,104 @@
+body {
+  background-color: lavender;
+  display: flex;
+  flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+  align-content: flex-start;
+}
+
+h1 {
+  align-self: center;
+  font-size: 3.5em;
+  margin-block-end: 0.1em;
+}
+
+h2 {
+  margin-block-end: 0.1em;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.7em;
+  margin-block-end: 0.3em;
+}
+
+p {
+  text-indent: 3em;
+  line-height: 150%;
+  margin-block-start: 0.75em;
+  margin-block-end: 0.75em;
+  font-size: 1.4em;
+}
+
+ol {
+  font-size: 1.4em;
+}
+
+a {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  align-self: center;
+}
+
+th {
+  font-size: 3em;
+}
+
+
+td {
+  font-size: 2em;
+  text-align: center;
+}
+
+table, th, td {
+  padding: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+
+.header, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-color: RebeccaPurple;
+  gap: 5
+}
+
+.footer {
+  display: flex;
+  background-color: DarkGrey;
+  font-size: 0.75em;
+  margin-top: 10px;
+  padding: 0px 50px;
+}
+
+.footer > a {
+  margin-left: auto;
+}
+
+.footer > p {
+  text-indent: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;;
+}
+
+.navigationButton {
+  margin: 15px;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}

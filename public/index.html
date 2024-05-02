@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" href = "./styling/style.css">
+    <script src = "./build/Background.js"></script>
+    <script src = "./build/Bubble.js"></script>
+    <script src = "./build/helper.js"></script>
+    <title>Logan Wagner</title>
+    <meta charset = "utf-8">
+    <meta name = "author" content = "Logan Wagner">
+    <meta name = "description" content = "My name is Logan. Welcome to my website">
+  </head>
+  <body>
+    <canvas id = "canvas"></canvas>
+    <svg id="pong" width="800" height="400">
+      <g color="white">
+      <circle r="10" cx="400" cy="200" fill="currentColor" />
+        <rect width="5" height="50" fill="currentColor" />
+      </g>
+    </svg>
+    <button type="button" onclick="popup">Alert</button>
+    <script>
+      function popup() {
+        alert("Hello");
+      }
+    </script>
+    <script type="text/javascript">
+      let colors = ["#EC994B", "#F1EEE9"];
+      var background = new Background("canvas", 200, colors);
+      background.animate();
+      window.addEventListener("resize", () => {
+        background.resize(window.innerWidth, window.innerHeight)
+      });
+    </script>
+  </body>
+
+</html>
